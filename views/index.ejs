@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternShip Backend</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <h1>Round 2 </h1> 
+    <div style="text-align: center; ">
+    <h3>Problem Statement</h3>
+    <p>Given a set of product names(separated by new line), you have to return average price of first 20 products in downloadable CSV format from Amazon.in</p>
+    <hr>
+    <form action="/amazonsearch" method="POST">
+        <p>Please Enter Product Names seperated By newline</p>
+        <textarea style="width: 50%; height: 30rem; resize: none;" name="products"></textarea>
+        <p></p> 
+        <input type="submit" class="btn btn-success" value="Get Average"></button>
+    </form>
+    
+</div>
+
+</body>
+</html>
