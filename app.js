@@ -5,7 +5,6 @@ const cheerio=require("cheerio");
 const fs=require('fs');
 const bodyParser=require('body-parser');
 const app = express();
-
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 app.use(express.static(__dirname + '/public'));
 app.set('views',__dirname+'/views');
@@ -25,7 +24,7 @@ app.post('/amazonsearch',urlencodedParser,(req,res)=>{
          return val;
     });
        
-writeStream.write(`Product Name, Average Price \n`);
+writeStream.write(`Product Name, Average Price in Rupees \n`);
 arr.forEach( async(val)=>{
    await axios.get('https://www.amazon.in/s?k='+val).then((response)=>{
       html=response.data;
